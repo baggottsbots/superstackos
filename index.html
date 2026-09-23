@@ -557,7 +557,7 @@
       <!-- Core -->
       <div class="absolute inset-0 flex items-center justify-center px-4">
         <div class="stack-core rounded-3xl bg-ink-800 border border-brand-500/40 px-8 py-8 sm:px-14 sm:py-12 text-center">
-          <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-volt-400 text-ink font-black text-xl">S</span>
+          <img src="https://paymegpt.com/objects/quick-uploads/2/d13163889f1ec1fb.png" alt="SuperStackOS" class="block mx-auto h-12 w-12">
           <p class="mt-4 text-3xl sm:text-5xl font-black text-white tracking-tight">One OS.</p>
           <p class="mt-2 text-sm sm:text-base text-gray-400">Everything connected. One login. One bill.</p>
         </div>
@@ -732,18 +732,19 @@
         </div>
 
         <div class="relative mt-16 grid grid-cols-[3rem_1fr] sm:grid-cols-[6rem_1fr] gap-x-4 sm:gap-x-8">
-          <!-- Drawn path column -->
-          <div class="relative">
-            <svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M50 0 C 90 120, 10 220, 50 340 S 90 560, 50 660 S 10 880, 50 1000" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" class="flow-path"/>
-              <path id="flowPath" d="M50 0 C 90 120, 10 220, 50 340 S 90 560, 50 660 S 10 880, 50 1000" fill="none" stroke="url(#flowGrad)" stroke-width="3" stroke-linecap="round" class="flow-path"/>
+          <!-- Drawn path column (path is generated in JS from real pixel sizes so it is never distorted) -->
+          <div id="flowCol" class="relative">
+            <svg id="flowSvg" class="absolute inset-0 h-full w-full overflow-visible" aria-hidden="true">
               <defs>
                 <linearGradient id="flowGrad" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stop-color="#a78bfa"/>
                   <stop offset="100%" stop-color="#22d3ee"/>
                 </linearGradient>
               </defs>
-              <circle id="flowDot" cx="50" cy="0" r="6" fill="#22d3ee" style="filter: drop-shadow(0 0 10px #22d3ee)"/>
+              <path id="flowTrack" d="" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-linecap="round"/>
+              <path id="flowPath" d="" fill="none" stroke="url(#flowGrad)" stroke-width="3" stroke-linecap="round"/>
+              <g id="flowNodes"></g>
+              <circle id="flowDot" cx="0" cy="0" r="6" fill="#22d3ee" style="filter: drop-shadow(0 0 8px #22d3ee)"/>
             </svg>
           </div>
 
