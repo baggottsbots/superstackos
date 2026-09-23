@@ -121,23 +121,93 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     // Function: initFlowPath()
     // Purpose: Draw the SVG line down the "How it works" steps as you scroll and ride a
     //          glowing dot along it using MotionPathPlugin (scrubbed to scroll position)
+    // Note: The path is rebuilt in real pixel coordinates on every resize so the curve,
+    //       stroke and dot stay perfectly round and aligned with each step on any screen.
     (function initFlowPath() {
+      var NS = 'http://www.w3.org/2000/svg';
+      var svg = document.getElementById('flowSvg');
+      var col = document.getElementById('flowCol');
       var path = document.getElementById('flowPath');
+      var track = document.getElementById('flowTrack');
+      var nodesG = document.getElementById('flowNodes');
       var dot = document.getElementById('flowDot');
-      var section = document.querySelector('.flow-steps');
-      if (!path || !dot || !section) return;
+      var list = document.querySelector('.flow-steps');
+      if (!svg || !col || !path || !track || !dot || !list) return;
 
-      var len = path.getTotalLength();
-      gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
+      var steps = Array.prototype.slice.call(list.children);
+      var len = 0, nodes = [], state = { p: 0 };
 
-      gsap.timeline({
-        scrollTrigger: { trigger: section, start: 'top 65%', end: 'bottom 60%', scrub: 1 }
-      })
-        .to(path, { strokeDashoffset: 0, ease: 'none', duration: 1 }, 0)
-        .to(dot, {
-          motionPath: { path: '#flowPath', align: '#flowPath', alignOrigin: [0.5, 0.5] },
-          ease: 'none', duration: 1
-        }, 0);
+      function build() {
+        var w = col.clientWidth, h = col.clientHeight;
+        if (!w || !h) return;
+        svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+        var cx = w / 2;
+        var amp = Math.max(8, w * 0.32);
+
+        // Anchor points: top, one per step (aligned with STEP label, transform-independent), bottom
+        var pts = [{ x: cx, y: 0 }];
+        steps.forEach(function (li) {
+          var y = li.offsetTop - col.offsetTop + Math.min(40, li.offsetHeight / 2);
+          pts.push({ x: cx, y: y, node: true });
+        });
+        pts.push({ x: cx, y: h });
+
+        var d = 'M' + cx + ' 0';
+        for (var i = 1; i < pts.length; i++) {
+          var a = pts[i - 1], b = pts[i], dy = b.y - a.y;
+          var s = (i % 2 ? 1 : -1) * amp;
+          d += ' C' + (cx + s) + ' ' + (a.y + dy * 0.3) + ', ' + (cx + s) + ' ' + (b.y - dy * 0.3) + ', ' + b.x + ' ' + b.y;
+        }
+        path.setAttribute('d', d);
+        track.setAttribute('d', d);
+        len = path.getTotalLength();
+        path.style.strokeDasharray = len;
+
+        // Step nodes
+        while (nodesG.firstChild) nodesG.removeChild(nodesG.firstChild);
+        nodes = [];
+        pts.forEach(function (p) {
+          if (!p.node) return;
+          var c = document.createElementNS(NS, 'circle');
+          c.setAttribute('cx', p.x); c.setAttribute('cy', p.y); c.setAttribute('r', w < 60 ? 5 : 7);
+          c.setAttribute('fill', '#0b0b14'); c.setAttribute('stroke', 'rgba(255,255,255,0.2)'); c.setAttribute('stroke-width', '2');
+          c.style.transition = 'fill .3s, stroke .3s';
+          nodesG.appendChild(c);
+          nodes.push({ el: c, y: p.y });
+        });
+        render();
+      }
+
+      function render() {
+        if (!len) return;
+        var l = len * state.p;
+        path.style.strokeDashoffset = len - l;
+        var pt = path.getPointAtLength(l);
+        dot.setAttribute('cx', pt.x);
+        dot.setAttribute('cy', pt.y);
+        nodes.forEach(function (n) {
+          var on = pt.y >= n.y - 1;
+          n.el.setAttribute('fill', on ? '#22d3ee' : '#0b0b14');
+          n.el.setAttribute('stroke', on ? '#a78bfa' : 'rgba(255,255,255,0.2)');
+        });
+      }
+
+      build();
+
+      gsap.to(state, {
+        p: 1,
+        ease: 'none',
+        onUpdate: render,
+        scrollTrigger: { trigger: list, start: 'top 70%', end: 'bottom 70%', scrub: 0.6, invalidateOnRefresh: true }
+      });
+
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(function () { build(); }).observe(col);
+      } else {
+        window.addEventListener('resize', build);
+      }
+      ScrollTrigger.addEventListener('refresh', build);
+      window.addEventListener('load', build);
     })();
 
     // ===== PRICING CHECKOUT (STRIPE VIA PLATFORM) =====
