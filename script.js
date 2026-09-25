@@ -91,7 +91,7 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     // ===== STACK REPLACEMENT PINNED SCENE =====
     // Function: initStackScene()
     // Purpose: Pin the section and, as the user scrolls, pull every scattered SaaS card
-    //          into the center where they collapse into the glowing SuperStackOS core
+    //          into the center where they collapse into the glowing SuperStack OS core
     // Behaviour: scrub:1 ties progress to scroll; headline A fades out, caption B fades in
     (function initStackScene() {
       var scene = document.querySelector('.stack-scene');
