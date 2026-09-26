@@ -37,7 +37,7 @@
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* ===== STACK SCENE (PINNED GSAP MOMENT) ===== */
-    /* Scattered SaaS cards that converge into the SuperStackOS core while scrolling */
+    /* Scattered SaaS cards that converge into the SuperStack OS core while scrolling */
     .stack-card { position: absolute; will-change: transform, opacity; }
     .stack-core { box-shadow: 0 0 0 1px rgba(167,139,250,0.35), 0 0 80px rgba(139,92,246,0.45), 0 0 160px rgba(34,211,238,0.25); }
 
