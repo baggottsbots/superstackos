@@ -19,21 +19,7 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     // Function: toggleMobileMenu()
     // Purpose: Show/hide navigation menu on mobile devices and update aria state
     // Triggers: Click on hamburger button; closes when a link is tapped
-    (function toggleMobileMenu() {
-      var btn = document.getElementById('nav-toggle');
-      var menu = document.getElementById('mobile-menu');
-      if (!btn || !menu) return;
-      btn.addEventListener('click', function () {
-        var open = menu.classList.toggle('hidden') === false;
-        btn.setAttribute('aria-expanded', String(open));
-      });
-      menu.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          menu.classList.add('hidden');
-          btn.setAttribute('aria-expanded', 'false');
-        });
-      });
-    })();
+    (function(){var b=document.getElementById('nav-toggle'),m=document.getElementById('mobile-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false');});});})();
 
     // ===== HERO INTRO TIMELINE =====
     // Function: initHeroIntro()
