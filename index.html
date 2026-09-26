@@ -346,7 +346,8 @@
       </ul>
 
       <div class="hidden md:flex items-center gap-3">
-        <a href="#pricing" class="cta-primary inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink hover:bg-brand-300 transition">Get SuperStack OS</a>
+        <a href="https://platform.superstackos.com/auth" class="text-sm text-gray-300 hover:text-white transition">Log in</a>
+        <a href="https://platform.superstackos.com/auth" class="cta-primary inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink hover:bg-brand-300 transition">Sign up</a>
       </div>
 
       <!-- Mobile hamburger -->
@@ -363,7 +364,8 @@
         <li><a href="#pricing" class="block rounded-lg px-3 py-2 hover:bg-white/5">Pricing</a></li>
         <li><a href="#testimonials" class="block rounded-lg px-3 py-2 hover:bg-white/5">Customers</a></li>
         <li><a href="#faq" class="block rounded-lg px-3 py-2 hover:bg-white/5">FAQ</a></li>
-        <li><a href="#pricing" class="mt-2 block rounded-lg bg-white px-3 py-2 text-center font-semibold text-ink">Get SuperStack OS</a></li>
+        <li><a href="https://platform.superstackos.com/auth" class="block rounded-lg px-3 py-2 hover:bg-white/5">Log in</a></li>
+        <li><a href="https://platform.superstackos.com/auth" class="mt-2 block rounded-lg bg-white px-3 py-2 text-center font-semibold text-ink">Sign up</a></li>
       </ul>
     </div>
   </header>
@@ -396,7 +398,7 @@
           </p>
 
           <div class="hero-ctas mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="#pricing" class="cta-primary w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-7 py-3.5 text-base font-bold text-ink shadow-lg shadow-brand-600/30 hover:brightness-110 transition">
+            <a href="https://platform.superstackos.com/auth" class="cta-primary w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-7 py-3.5 text-base font-bold text-ink shadow-lg shadow-brand-600/30 hover:brightness-110 transition">
               Start running on SuperStack OS
             </a>
             <a href="#how-it-works" class="cta-secondary w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition">
@@ -786,37 +788,19 @@
     </section>
 
     <!-- ============================================================================ -->
-    <!-- PRICING SECTION: Three tiers with Stripe Checkout via window.__processPayment -->
-    <!-- Features: Email + name capture (required), per-tier Buy buttons               -->
-    <!-- Edit: Change data-cents / data-product on each button to update prices        -->
+    <!-- PRICING SECTION: Three tiers — buttons redirect to platform sign up / login   -->
+    <!-- Link: https://platform.superstackos.com/auth                                  -->
     <!-- ============================================================================ -->
     <section id="pricing" data-section="pricing" class="pricing-section relative py-20 sm:py-28 bg-ink-900/60 border-y border-white/5">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto">
           <p class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-300">Pricing</p>
           <h2 class="reveal mt-3 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">One bill. <span class="text-gradient">Every tool.</span></h2>
-          <p class="reveal mt-4 text-gray-400 text-base sm:text-lg">Cancel the twelve subscriptions. Pick the plan that fits and you're live in minutes — secure checkout powered by Stripe.</p>
+          <p class="reveal mt-4 text-gray-400 text-base sm:text-lg">Cancel the twelve subscriptions. Pick the plan that fits, create your account and you're live in minutes.</p>
         </div>
 
-        <!-- Checkout details (shared by all tiers) -->
-        <form id="checkout-form" class="checkout-form reveal mt-12 mx-auto max-w-3xl glass rounded-2xl p-5 sm:p-6" novalidate>
-          <p class="text-sm font-semibold text-white">Step 1 — Where should we send your login?</p>
-          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label for="email" class="block text-xs font-medium text-gray-400 mb-1.5">Work email <span class="text-brand-300">*</span></label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com" class="w-full rounded-lg border border-white/10 bg-ink px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-500">
-            </div>
-            <div>
-              <label for="name" class="block text-xs font-medium text-gray-400 mb-1.5">Full name (optional)</label>
-              <input type="text" id="name" name="name" autocomplete="name" placeholder="Jordan Rivera" class="w-full rounded-lg border border-white/10 bg-ink px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-500">
-            </div>
-          </div>
-          <p id="checkout-msg" class="mt-3 text-sm text-red-400 hidden" role="alert"></p>
-          <p class="mt-3 text-xs text-gray-500">Step 2 — choose a plan below. You'll be redirected to Stripe's secure checkout.</p>
-        </form>
-
         <!-- Tiers -->
-        <div class="pricing-grid mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+        <div class="pricing-grid mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
           <!-- Basic -->
           <article class="reveal glass rounded-2xl p-7 flex flex-col">
             <h3 class="text-lg font-bold text-white">Basic</h3>
@@ -830,10 +814,9 @@
               <li class="flex gap-2"><span class="text-volt-400">✓</span> Stripe commerce</li>
               <li class="flex gap-2"><span class="text-volt-400">✓</span> 500 voice minutes</li>
             </ul>
-            <button type="button" class="buy-btn mt-8 w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 font-semibold text-white hover:bg-white/10 transition"
-              data-cents="4900" data-product="SuperStack OS Basic — Monthly" data-desc="Basic plan: 3 AI agents, CRM, campaigns, automations, Stripe commerce, 500 voice minutes.">
+            <a href="https://platform.superstackos.com/auth" class="plan-btn mt-8 block w-full text-center rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 font-semibold text-white hover:bg-white/10 transition">
               Get Basic
-            </button>
+            </a>
           </article>
 
           <!-- PRO (featured) -->
@@ -852,10 +835,9 @@
                 <li class="flex gap-2"><span class="text-volt-400">✓</span> 3,000 voice minutes</li>
                 <li class="flex gap-2"><span class="text-volt-400">✓</span> 5 team seats</li>
               </ul>
-              <button type="button" class="buy-btn mt-8 w-full rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-5 py-3.5 font-bold text-ink hover:brightness-110 transition shadow-lg shadow-brand-600/30"
-                data-cents="7900" data-product="SuperStack OS PRO — Monthly" data-desc="PRO plan: unlimited agents, 50k contacts, wallet passes, loyalty, content studio, 3,000 voice minutes, 5 seats.">
+              <a href="https://platform.superstackos.com/auth" class="plan-btn mt-8 block w-full text-center rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-5 py-3.5 font-bold text-ink hover:brightness-110 transition shadow-lg shadow-brand-600/30">
                 Get PRO
-              </button>
+              </a>
             </div>
           </article>
 
@@ -872,14 +854,13 @@
               <li class="flex gap-2"><span class="text-volt-400">✓</span> Snapshot templates &amp; cloning</li>
               <li class="flex gap-2"><span class="text-volt-400">✓</span> Priority support &amp; onboarding</li>
             </ul>
-            <button type="button" class="buy-btn mt-8 w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 font-semibold text-white hover:bg-white/10 transition"
-              data-cents="29700" data-product="SuperStack OS White-Label — Monthly" data-desc="White-Label plan: everything in PRO plus unlimited sub-accounts, full white-label, white-labeled MCP server, priority support.">
+            <a href="https://platform.superstackos.com/auth" class="plan-btn mt-8 block w-full text-center rounded-xl border border-white/15 bg-white/5 px-5 py-3.5 font-semibold text-white hover:bg-white/10 transition">
               Get White-Label
-            </button>
+            </a>
           </article>
         </div>
 
-        <p class="reveal mt-8 text-center text-xs text-gray-500">Payments processed securely by Stripe. Cancel anytime. Prices in USD.</p>
+        <p class="reveal mt-8 text-center text-xs text-gray-500">Already have an account? <a href="https://platform.superstackos.com/auth" class="text-brand-300 hover:text-white transition">Log in</a>. Cancel anytime. Prices in USD.</p>
       </div>
     </section>
 
