@@ -9,4 +9,5 @@ html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
     .post-card:hover .post-title { color: #c4b5fd; }
     .chip { transition: background .2s, border-color .2s, color .2s; }
     .chip.active { background: linear-gradient(90deg, #8b5cf6, #22d3ee); color: #07070d; border-color: transparent; }
+    .hero-badge{background-color:rgba(255,255,255,0.06);-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;isolation:isolate;}
     #mobile-menu{display:none} #mobile-menu.open{display:block} @media (min-width:1024px){#mobile-menu,#mobile-menu.open{display:none !important}}
