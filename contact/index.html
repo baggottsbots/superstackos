@@ -367,14 +367,14 @@
       </div>
     </section>
 
-    <section data-section="contact" class="pb-20 sm:pb-28">
+    <section data-section="contact" class="pt-10 sm:pt-14 pb-20 sm:pb-28">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
           <!-- Info column -->
-          <div class="lg:col-span-2 space-y-5">
+          <div class="lg:col-span-2 space-y-5 order-2 lg:order-1">
             <div class="glass rounded-2xl p-6">
               <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-300">Email</p>
-              <a href="mailto:admin@SuperStackOS.com" class="mt-2 block text-lg font-bold text-white hover:text-brand-300 transition">admin@SuperStackOS.com</a>
+              <a href="mailto:admin@SuperStackOS.com" class="mt-2 block text-lg font-bold text-white hover:text-brand-300 transition break-all">admin@SuperStackOS.com</a>
               <p class="mt-2 text-sm text-gray-400">Prefer email? Write to us any time.</p>
             </div>
             <div class="glass rounded-2xl p-6">
@@ -395,10 +395,87 @@
           </div>
 
           <!-- Form column -->
-          <div class="lg:col-span-3">
+          <div class="lg:col-span-3 order-1 lg:order-2">
             <div class="rounded-3xl p-[1px] bg-gradient-to-b from-brand-500/60 to-volt-400/40">
-              <div class="rounded-3xl bg-ink-900 p-2 sm:p-4">
-                <iframe src="https://paymegpt.com/forms/f2i89i01?theme=dark&amp;accent=%238b5cf6" title="Contact SuperStack OS" class="w-full rounded-2xl" style="min-height:760px;border:0;background:transparent" loading="lazy"></iframe>
+              <div class="rounded-3xl bg-ink-900 p-6 sm:p-8">
+
+                <!-- FORM STATE -->
+                <div id="form-wrap">
+                  <h2 class="text-2xl font-black tracking-tight text-white">Send us a message</h2>
+                  <p class="mt-1 text-sm text-gray-400">We usually reply within one business day.</p>
+
+                  <form id="contact-form" class="mt-6 space-y-5" novalidate autocomplete="on">
+                    <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      <div>
+                        <label class="f-label" for="f-name">Full name <span class="text-brand-300">*</span></label>
+                        <input id="f-name" name="name" type="text" class="f-input" placeholder="Jane Doe" autocomplete="name" required>
+                        <p class="f-error" data-for="f-name">Please enter your name.</p>
+                      </div>
+                      <div>
+                        <label class="f-label" for="f-email">Work email <span class="text-brand-300">*</span></label>
+                        <input id="f-email" name="email" type="email" class="f-input" placeholder="you@company.com" autocomplete="email" inputmode="email" required>
+                        <p class="f-error" data-for="f-email">Please enter a valid email.</p>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      <div>
+                        <label class="f-label" for="f-phone">Phone <span class="text-gray-500 font-normal">(optional)</span></label>
+                        <input id="f-phone" name="phone" type="tel" class="f-input" placeholder="+1 555 123 4567" autocomplete="tel" inputmode="tel">
+                      </div>
+                      <div>
+                        <label class="f-label" for="f-company">Company <span class="text-gray-500 font-normal">(optional)</span></label>
+                        <input id="f-company" name="company" type="text" class="f-input" placeholder="Your company" autocomplete="organization">
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="f-label" for="f-interest">What can we help with? <span class="text-brand-300">*</span></label>
+                      <select id="f-interest" name="interest" class="f-input" required>
+                        <option value="">Select a topic</option>
+                        <option>Plans and pricing</option>
+                        <option>White-Label platform for my agency</option>
+                        <option>MCP connector setup</option>
+                        <option>Migrating from my current tools</option>
+                        <option>Partnership</option>
+                        <option>Support</option>
+                        <option>Something else</option>
+                      </select>
+                      <p class="f-error" data-for="f-interest">Please pick a topic.</p>
+                    </div>
+
+                    <div>
+                      <label class="f-label" for="f-message">Message <span class="text-brand-300">*</span></label>
+                      <textarea id="f-message" name="message" class="f-input" placeholder="Tell us a little about what you're building or what you need."></textarea>
+                      <p class="f-error" data-for="f-message">Please add a short message.</p>
+                    </div>
+
+                    <div>
+                      <button id="f-submit" type="submit" class="cta-primary w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-6 py-3.5 text-base font-bold text-ink shadow-lg shadow-brand-600/30 hover:brightness-110 transition disabled:opacity-70 disabled:cursor-not-allowed">
+                        <svg id="f-spin" class="spin hidden h-5 w-5" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" opacity=".25"/><path d="M22 12a10 10 0 00-10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                        <span id="f-submit-label">Send message</span>
+                      </button>
+                      <p id="f-fail" class="f-error text-center mt-3">Something went wrong sending your message. Please try again or email admin@SuperStackOS.com.</p>
+                      <p class="mt-3 text-center text-xs text-gray-500">By sending this you agree to be contacted about your request. We never share your details.</p>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- SUCCESS STATE -->
+                <div id="success" class="hidden text-center py-10" role="status" aria-live="polite">
+                  <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-volt-400">
+                    <svg class="h-8 w-8 text-ink" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <h2 class="mt-6 text-2xl sm:text-3xl font-black tracking-tight text-white">Message sent</h2>
+                  <p class="mt-3 text-gray-400 max-w-md mx-auto">Thanks for reaching out. Our team will get back to you within one business day.</p>
+                  <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <a href="/blog" class="cta-secondary w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">Read the blog</a>
+                    <a href="/" class="cta-secondary w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">Back to home</a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -445,6 +522,85 @@
   </footer>
 
   
+
+  <script>
+  ;(function () {
+    var WEBHOOK = 'https://paymegpt.com/api/webhooks/flow/6162/d4ac7d315f0a2fc6e2000a753a48c2a5e2ace66589b08a4a77700b5d25e4894b';
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var $ = function (id) { return document.getElementById(id); };
+    var submitBtn = $('f-submit'), spin = $('f-spin'), label = $('f-submit-label'), fail = $('f-fail');
+
+    function setErr(id, on) {
+      var el = $(id), msg = document.querySelector('.f-error[data-for="' + id + '"]');
+      if (el) el.classList.toggle('err', on);
+      if (msg) msg.classList.toggle('show', on);
+    }
+    function validate() {
+      var ok = true;
+      var name = $('f-name').value.trim();
+      var email = $('f-email').value.trim();
+      var interest = $('f-interest').value;
+      var message = $('f-message').value.trim();
+      var checks = [
+        ['f-name', name.length >= 2],
+        ['f-email', /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)],
+        ['f-interest', !!interest],
+        ['f-message', message.length >= 5]
+      ];
+      checks.forEach(function (c) { setErr(c[0], !c[1]); if (!c[1]) ok = false; });
+      return ok;
+    }
+    ['f-name', 'f-email', 'f-interest', 'f-message'].forEach(function (id) {
+      $(id).addEventListener('input', function () { setErr(id, false); });
+      $(id).addEventListener('change', function () { setErr(id, false); });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      fail.classList.remove('show');
+      if ($('website').value) { // honeypot: pretend success
+        $('form-wrap').classList.add('hidden'); $('success').classList.remove('hidden'); return;
+      }
+      if (!validate()) {
+        var first = form.querySelector('.f-input.err'); if (first) first.focus();
+        return;
+      }
+      submitBtn.disabled = true; spin.classList.remove('hidden'); label.textContent = 'Sending...';
+
+      var payload = {
+        contactName: $('f-name').value.trim(),
+        contactEmail: $('f-email').value.trim(),
+        contactPhone: $('f-phone').value.trim(),
+        company: $('f-company').value.trim(),
+        interest: $('f-interest').value,
+        message: $('f-message').value.trim(),
+        source: 'superstackos.com/contact',
+        data: {
+          company: $('f-company').value.trim(),
+          interest: $('f-interest').value,
+          message: $('f-message').value.trim(),
+          source: 'superstackos.com/contact'
+        }
+      };
+
+      fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        $('form-wrap').classList.add('hidden');
+        $('success').classList.remove('hidden');
+        var top = $('success').getBoundingClientRect().top + window.pageYOffset - 120;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }).catch(function () {
+        fail.classList.add('show');
+        submitBtn.disabled = false; spin.classList.add('hidden'); label.textContent = 'Send message';
+      });
+    });
+  })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
