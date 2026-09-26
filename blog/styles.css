@@ -1,0 +1,11 @@
+html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
+    body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .grid-bg { background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px); background-size: 28px 28px; }
+    .text-gradient { background: linear-gradient(92deg, #a78bfa 0%, #22d3ee 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(10px); transition: border-color .25s ease, transform .25s ease; }
+    .glass:hover { border-color: rgba(167,139,250,0.35); }
+    .orb { position: absolute; border-radius: 9999px; filter: blur(90px); opacity: 0.45; pointer-events: none; }
+    .post-card:hover { transform: translateY(-4px); }
+    .post-card:hover .post-title { color: #c4b5fd; }
+    .chip { transition: background .2s, border-color .2s, color .2s; }
+    .chip.active { background: linear-gradient(90deg, #8b5cf6, #22d3ee); color: #07070d; border-color: transparent; }
