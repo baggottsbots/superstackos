@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
     // ===== HERO INTRO =====
     (function initHeroIntro() {
       gsap.set(['.hero-badge', '.hero-title', '.hero-sub', '.hero-ctas'], { autoAlpha: 0, y: 40 });
-      gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.8 } })
+      gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.8 }, onComplete: function(){ gsap.set(['.hero-badge', '.hero-title', '.hero-sub', '.hero-ctas'], { clearProps: 'transform,opacity,visibility' }); } })
         .to('.hero-badge', { autoAlpha: 1, y: 0 }, 0.1)
         .to('.hero-title', { autoAlpha: 1, y: 0 }, '-=0.55')
         .to('.hero-sub', { autoAlpha: 1, y: 0 }, '-=0.6')
