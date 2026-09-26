@@ -210,69 +210,6 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
       window.addEventListener('load', build);
     })();
 
-    // ===== PRICING CHECKOUT (STRIPE VIA PLATFORM) =====
-    // Function: handleBuyClick()
-    // Purpose: Validate the shared email field, then call window.__processPayment with the
-    //          tier's price (cents) and product name. Stripe Checkout handles the rest.
-    // Edit: Prices live in data-cents / data-product / data-desc on each .buy-btn
-    (function initCheckout() {
-      var emailInput = document.getElementById('email');
-      var nameInput = document.getElementById('name');
-      var msg = document.getElementById('checkout-msg');
-      var form = document.getElementById('checkout-form');
-
-      function showMessage(text) {
-        if (!msg) return;
-        msg.textContent = text;
-        msg.classList.remove('hidden');
-      }
-      function clearMessage() {
-        if (!msg) return;
-        msg.textContent = '';
-        msg.classList.add('hidden');
-      }
-      if (form) form.addEventListener('submit', function (e) { e.preventDefault(); });
-      if (emailInput) emailInput.addEventListener('input', clearMessage);
-
-      function handleBuyClick(e) {
-        var btn = e.currentTarget;
-        var email = emailInput ? emailInput.value.trim() : '';
-        var name = nameInput ? nameInput.value.trim() : '';
-        var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-        if (!valid) {
-          showMessage('Please enter a valid work email above so we can send your login.');
-          if (form) form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          if (emailInput) emailInput.focus();
-          return;
-        }
-
-        if (typeof window.__processPayment !== 'function') {
-          showMessage('Checkout is initializing. Please try again in a moment.');
-          return;
-        }
-
-        btn.disabled = true;
-        var original = btn.textContent;
-        btn.textContent = 'Redirecting to secure checkout…';
-
-        window.__processPayment({
-          amountCents: parseInt(btn.getAttribute('data-cents'), 10),
-          email: email,
-          name: name,
-          productName: btn.getAttribute('data-product'),
-          productDescription: btn.getAttribute('data-desc'),
-          quantity: 1
-        });
-
-        // Restore button if the redirect does not happen (e.g. user cancels)
-        setTimeout(function () { btn.disabled = false; btn.textContent = original; }, 6000);
-      }
-
-      document.querySelectorAll('.buy-btn').forEach(function (btn) {
-        btn.addEventListener('click', handleBuyClick);
-      });
-    })();
 
     // ===== REFRESH SCROLLTRIGGER AFTER FONTS/LAYOUT SETTLE =====
     // Function: refreshTriggers()
