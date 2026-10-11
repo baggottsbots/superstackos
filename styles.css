@@ -40,6 +40,19 @@
     /* Scattered SaaS cards that converge into the SuperStack OS core while scrolling */
     .stack-card { position: absolute; will-change: transform, opacity; }
     .stack-core { box-shadow: 0 0 0 1px rgba(167,139,250,0.35), 0 0 80px rgba(139,92,246,0.45), 0 0 160px rgba(34,211,238,0.25); }
+    .stack-scene { height: 100svh; min-height: 640px; }
+    .stack-headline-a { top: 88px; }
+    .stack-headline-a h2 { max-width: 760px; margin-left: auto; margin-right: auto; line-height: 1.15; }
+    .stack-scene .stack-card { z-index: 2; }
+    .stack-scene .stack-card:nth-of-type(3),
+    .stack-scene .stack-card:nth-of-type(4) { top: 35%; }
+    .stack-scene .stack-card:nth-of-type(9),
+    .stack-scene .stack-card:nth-of-type(10) { top: 44%; }
+    @media (max-width: 639px) {
+      .stack-scene .stack-card:nth-of-type(9) { left: 8%; }
+      .stack-scene .stack-card:nth-of-type(10) { right: 8%; }
+      .stack-headline-b { bottom: 28px; }
+    }
 
     /* ===== FLOW PATH (SVG DRAW) ===== */
     /* Stroke stays the same thickness even though the SVG is stretched vertically */
@@ -82,6 +95,11 @@
     .int-tile:hover .int-logo { border-color: color-mix(in srgb, var(--c) 50%, transparent); }
     @media (max-width: 639px) { .int-tile { padding: 18px 8px 16px; border-radius: 14px; } .int-logo { height: 50px; width: 50px; border-radius: 14px; } }
     @media (prefers-reduced-motion: reduce) { .int-tile { transition: none; } }
+
+    #push-dialog { width: min(92vw, 540px); padding: 0; color: #e5e7eb; background: #111120; border: 1px solid rgba(34,211,238,.3); border-radius: 24px; box-shadow: 0 32px 100px rgba(0,0,0,.65); }
+    #push-dialog::backdrop { background: rgba(7,7,13,.8); backdrop-filter: blur(8px); }
+    #push-dialog[open] { animation: push-dialog-in .35s ease-out; }
+    @keyframes push-dialog-in { from { opacity: 0; transform: translateY(24px) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
 
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
