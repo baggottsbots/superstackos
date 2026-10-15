@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/shop/</loc>
+    <lastmod>2026-10-15T02:01:04.028Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/contact/</loc>
-    <lastmod>2026-10-15T01:54:56.880Z</lastmod>
+    <lastmod>2026-10-15T01:57:46.997Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
