@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://superstackos.com/</loc>
-    <lastmod>2026-10-14T21:31:56.886Z</lastmod>
+    <loc>https://superstackos.com/contact/</loc>
+    <lastmod>2026-10-15T01:54:56.880Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/blog/white-label-mcp-connector/</loc>
-    <lastmod>2026-10-14T00:19:51.957Z</lastmod>
+    <lastmod>2026-10-15T01:49:22.076Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/</loc>
+    <lastmod>2026-10-14T21:32:07.289Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -23,11 +28,6 @@
   <url>
     <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
     <lastmod>2026-10-14T00:19:48.309Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/contact/</loc>
-    <lastmod>2026-10-14T00:19:47.025Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
