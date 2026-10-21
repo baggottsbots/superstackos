@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/team/asta-sonner/</loc>
+    <lastmod>2026-10-21T16:40:40.982Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/team/</loc>
     <lastmod>2026-10-21T16:40:26.152Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://superstackos.com/team/jetsury-padilla/</loc>
     <lastmod>2026-10-21T16:38:44.739Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/asta-sonner/</loc>
-    <lastmod>2026-10-21T16:38:44.296Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
