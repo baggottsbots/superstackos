@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/blog/white-label-mcp-connector/</loc>
+    <lastmod>2026-10-21T16:29:52.586Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/blog/white-label-ai-platform-for-agencies/</loc>
     <lastmod>2026-10-21T16:29:44.539Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://superstackos.com/contact/</loc>
     <lastmod>2026-10-21T16:21:59.512Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/blog/white-label-mcp-connector/</loc>
-    <lastmod>2026-10-21T16:21:47.208Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
