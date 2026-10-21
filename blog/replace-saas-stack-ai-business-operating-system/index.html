@@ -9,11 +9,22 @@
   
   
   
-  <link rel="icon" href="https://paymegpt.com/objects/quick-uploads/2/d13163889f1ec1fb.png">
+  
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Replace Your SaaS Stack With One AI Business Operating System","description":"A practical audit for consolidating CRM, email, automation, booking and payments into a single connected platform.","datePublished":"2026-09-23","author":{"@type":"Organization","name":"SuperStack OS"},"publisher":{"@type":"Organization","name":"SuperStack OS","logo":{"@type":"ImageObject","url":"https://paymegpt.com/objects/quick-uploads/2/d13163889f1ec1fb.png"}}}</script>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          ink: { DEFAULT: '#07070d', 900: '#0b0b14', 800: '#111120', 700: '#181829', 600: '#22223a' },
+          brand: { 300: '#c4b5fd', 400: '#a78bfa', 500: '#8b5cf6', 600: '#7c3aed' },
+          volt: { 300: '#67e8f9', 400: '#22d3ee', 500: '#06b6d4' }
+        },
+        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'] }
+      } }
+    };
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
@@ -27,6 +38,9 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Replace Your SaaS Stack With One AI Business Operating System | SuperStack OS" />
 <meta name="twitter:description" content="Too many disconnected tools? Learn how to audit your software stack and consolidate CRM, email, automation, voice and payments into one AI business operating system." />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
@@ -313,7 +327,8 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="font-sans">
@@ -332,11 +347,13 @@
         <li><a href="/#testimonials" class="hover:text-white transition">Customers</a></li>
         <li><a href="/#faq" class="hover:text-white transition">FAQ</a></li>
         <li><a href="/blog" class="text-white font-semibold" aria-current="page">Blog</a></li>
+        <li><a href="/shop" class="hover:text-white transition">Shop</a></li>
+        <li><a href="/team" class="hover:text-white transition">Team</a></li>
         <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
       </ul>
       <div class="hidden lg:flex items-center gap-3">
-        <a href="https://app.superstackos.com/auth" class="text-sm text-gray-300 hover:text-white transition">Log in</a>
-        <a href="https://app.superstackos.com/auth" class="cta-primary inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink hover:bg-brand-300 transition">Sign up</a>
+        <a href="https://platform.superstackos.com/auth" class="text-sm text-gray-300 hover:text-white transition">Log in</a>
+        <a href="https://platform.superstackos.com/auth" class="cta-primary inline-flex items-center rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink hover:bg-brand-300 transition">Sign up</a>
       </div>
       <button id="nav-toggle" class="nav-menu-toggle lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-white" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -350,9 +367,11 @@
         <li><a href="/#testimonials" class="block rounded-lg px-3 py-2 hover:bg-white/5">Customers</a></li>
         <li><a href="/#faq" class="block rounded-lg px-3 py-2 hover:bg-white/5">FAQ</a></li>
         <li><a href="/blog" class="block rounded-lg px-3 py-2 bg-white/5 font-semibold text-white">Blog</a></li>
+        <li><a href="/shop" class="block rounded-lg px-3 py-2 hover:bg-white/5">Shop</a></li>
+        <li><a href="/team" class="block rounded-lg px-3 py-2 hover:bg-white/5">Team</a></li>
         <li><a href="/contact" class="block rounded-lg px-3 py-2 hover:bg-white/5">Contact</a></li>
-        <li><a href="https://app.superstackos.com/auth" class="block rounded-lg px-3 py-2 hover:bg-white/5">Log in</a></li>
-        <li><a href="https://app.superstackos.com/auth" class="mt-2 block rounded-lg bg-white px-3 py-2 text-center font-semibold text-ink">Sign up</a></li>
+        <li><a href="https://platform.superstackos.com/auth" class="block rounded-lg px-3 py-2 hover:bg-white/5">Log in</a></li>
+        <li><a href="https://platform.superstackos.com/auth" class="mt-2 block rounded-lg bg-white px-3 py-2 text-center font-semibold text-ink">Sign up</a></li>
       </ul>
     </div>
   </header>
@@ -446,7 +465,7 @@
             <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white">Cancel the tabs. <span class="text-gradient">Keep the results.</span></h2>
             <p class="mt-3 text-gray-400">One platform, one login, one bill.</p>
             <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a href="https://app.superstackos.com/auth" class="cta-primary w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-6 py-3 font-bold text-ink hover:brightness-110 transition">Start running on SuperStack OS</a>
+              <a href="https://platform.superstackos.com/auth" class="cta-primary w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-500 to-volt-400 px-6 py-3 font-bold text-ink hover:brightness-110 transition">Start running on SuperStack OS</a>
               <a href="/#pricing" class="cta-secondary w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">See pricing</a>
             </div>
           </div>
@@ -488,11 +507,13 @@
             <li><a href="/#features" class="hover:text-white transition">Features</a></li>
             <li><a href="/#how-it-works" class="hover:text-white transition">MCP connectivity</a></li>
             <li><a href="/#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="/shop" class="hover:text-white transition">Shop</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-sm font-semibold text-white">Company</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-400">
+            <li><a href="/team" class="hover:text-white transition">Team</a></li>
             <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
             <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
             <li><a href="/#testimonials" class="hover:text-white transition">Customers</a></li>
@@ -508,7 +529,6 @@
     </div>
   </footer>
 
-  
-  <script src="script.js"></script>
+  <script>;(function(){var b=document.getElementById('nav-toggle'),m=document.getElementById('mobile-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false');});});})();</script>
 </body>
 </html>
