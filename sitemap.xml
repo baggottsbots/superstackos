@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/</loc>
+    <lastmod>2026-10-21T16:29:04.333Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/</loc>
+    <lastmod>2026-10-21T16:28:21.373Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/bright-aniekan/</loc>
+    <lastmod>2026-10-21T16:24:59.304Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/team/wendy-molinares/</loc>
     <lastmod>2026-10-21T16:23:18.094Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,18 +31,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/team/bright-aniekan/</loc>
-    <lastmod>2026-10-21T16:22:46.600Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://superstackos.com/team/asta-sonner/</loc>
     <lastmod>2026-10-21T16:22:39.502Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/</loc>
-    <lastmod>2026-10-21T16:22:27.209Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://superstackos.com/blog/</loc>
     <lastmod>2026-10-21T16:20:49.459Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/</loc>
-    <lastmod>2026-10-21T16:20:30.531Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
