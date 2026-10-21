@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/team/wendy-molinares/</loc>
+    <lastmod>2026-10-21T16:41:10.864Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/team/ryan-baggott/</loc>
     <lastmod>2026-10-21T16:41:01.681Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://superstackos.com/</loc>
     <lastmod>2026-10-21T16:38:52.663Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/wendy-molinares/</loc>
-    <lastmod>2026-10-21T16:38:43.634Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
