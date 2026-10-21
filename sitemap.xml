@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/blog/what-is-mcp-for-business/</loc>
+    <lastmod>2026-10-21T16:12:19.149Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
     <lastmod>2026-10-21T16:12:08.008Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,11 +53,6 @@
   <url>
     <loc>https://superstackos.com/shop/</loc>
     <lastmod>2026-10-21T16:09:46.158Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/blog/what-is-mcp-for-business/</loc>
-    <lastmod>2026-10-21T16:07:42.632Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
