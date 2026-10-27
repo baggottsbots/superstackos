@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://superstackos.com/team/bright-aniekan/</loc>
-    <lastmod>2026-10-21T18:37:29.005Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/jetsury-padilla/</loc>
-    <lastmod>2026-10-21T18:37:20.128Z</lastmod>
+    <loc>https://superstackos.com/</loc>
+    <lastmod>2026-10-27T23:35:25.258Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/team/</loc>
-    <lastmod>2026-10-21T18:17:43.530Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/wendy-molinares/</loc>
-    <lastmod>2026-10-21T18:00:42.306Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/ryan-baggott/</loc>
-    <lastmod>2026-10-21T16:41:01.681Z</lastmod>
+    <lastmod>2026-10-27T11:16:44.405Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/team/asta-sonner/</loc>
-    <lastmod>2026-10-21T16:40:40.982Z</lastmod>
+    <lastmod>2026-10-26T21:09:37.352Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/wendy-molinares/</loc>
+    <lastmod>2026-10-26T18:07:51.382Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/ryan-baggott/</loc>
+    <lastmod>2026-10-26T15:03:04.998Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/jetsury-padilla/</loc>
+    <lastmod>2026-10-26T11:20:43.669Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/team/bright-aniekan/</loc>
+    <lastmod>2026-10-26T07:16:15.700Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/contact/</loc>
+    <lastmod>2026-10-25T14:21:36.784Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/shop/</loc>
     <lastmod>2026-10-21T16:40:19.355Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/contact/</loc>
-    <lastmod>2026-10-21T16:40:01.569Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://superstackos.com/blog/</loc>
     <lastmod>2026-10-21T16:39:04.117Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/</loc>
-    <lastmod>2026-10-21T16:38:52.663Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
