@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
+    <lastmod>2026-11-26T17:50:11.864Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/blog/</loc>
     <lastmod>2026-11-26T17:49:58.184Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,11 +108,6 @@
   <url>
     <loc>https://superstackos.com/contact/</loc>
     <lastmod>2026-11-26T17:46:13.013Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
-    <lastmod>2026-11-26T17:46:12.181Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
