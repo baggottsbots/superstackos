@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/contact/</loc>
+    <lastmod>2026-11-26T01:21:27.301Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
     <lastmod>2026-11-26T01:21:18.698Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -263,11 +268,6 @@
   <url>
     <loc>https://superstackos.com/team/ryan-baggott/</loc>
     <lastmod>2026-11-26T01:10:26.885Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/contact/</loc>
-    <lastmod>2026-11-26T01:10:25.509Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
