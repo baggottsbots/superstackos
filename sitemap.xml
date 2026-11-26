@@ -1,73 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://superstackos.com/</loc>
-    <lastmod>2026-11-10T05:34:11.114Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/ryan-baggott/</loc>
-    <lastmod>2026-11-09T05:44:01.678Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/contact/</loc>
-    <lastmod>2026-11-08T08:49:58.638Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/jetsury-padilla/</loc>
-    <lastmod>2026-11-04T20:55:46.777Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/wendy-molinares/</loc>
-    <lastmod>2026-11-04T20:47:52.837Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/bright-aniekan/</loc>
-    <lastmod>2026-11-04T20:27:05.705Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/asta-sonner/</loc>
-    <lastmod>2026-11-04T20:17:46.102Z</lastmod>
+    <loc>https://superstackos.com/compare/</loc>
+    <lastmod>2026-11-26T01:01:04.346Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/team/</loc>
-    <lastmod>2026-11-02T04:57:13.398Z</lastmod>
+    <lastmod>2026-11-25T17:59:26.568Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/shop/</loc>
-    <lastmod>2026-10-21T16:40:19.355Z</lastmod>
+    <loc>https://superstackos.com/team/asta-sonner/</loc>
+    <lastmod>2026-11-25T17:19:51.183Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/blog/white-label-mcp-connector/</loc>
-    <lastmod>2026-10-21T16:39:52.523Z</lastmod>
+    <loc>https://superstackos.com/team/bright-aniekan/</loc>
+    <lastmod>2026-11-25T17:09:34.397Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/blog/white-label-ai-platform-for-agencies/</loc>
-    <lastmod>2026-10-21T16:39:43.565Z</lastmod>
+    <loc>https://superstackos.com/team/ryan-baggott/</loc>
+    <lastmod>2026-11-25T17:00:43.455Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/blog/what-is-mcp-for-business/</loc>
-    <lastmod>2026-10-21T16:39:35.357Z</lastmod>
+    <loc>https://superstackos.com/team/jetsury-padilla/</loc>
+    <lastmod>2026-11-25T16:50:29.864Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
-    <lastmod>2026-10-21T16:39:21.438Z</lastmod>
+    <loc>https://superstackos.com/team/wendy-molinares/</loc>
+    <lastmod>2026-11-25T16:41:53.311Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/contact/</loc>
+    <lastmod>2026-11-25T05:14:48.658Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://superstackos.com/blog/</loc>
-    <lastmod>2026-10-21T16:39:04.117Z</lastmod>
+    <lastmod>2026-11-21T17:08:49.633Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/blog/replace-saas-stack-ai-business-operating-system/</loc>
+    <lastmod>2026-11-21T17:08:48.604Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/blog/what-is-mcp-for-business/</loc>
+    <lastmod>2026-11-21T17:08:48.021Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/blog/white-label-ai-platform-for-agencies/</loc>
+    <lastmod>2026-11-21T17:08:47.305Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/blog/white-label-mcp-connector/</loc>
+    <lastmod>2026-11-21T17:08:46.669Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/shop/</loc>
+    <lastmod>2026-11-21T17:08:45.515Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://superstackos.com/</loc>
+    <lastmod>2026-11-21T17:08:39.983Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
