@@ -12,3 +12,5 @@ html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
     .team-card { width: 100%; max-width: 26rem; }
     @media (min-width: 768px) { .team-card { width: calc(33.3333% - 1rem); max-width: none; } }
     .team-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; display: block; }
+
+.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
