@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/team/</loc>
+    <lastmod>2026-11-26T01:48:13.827Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/contact/</loc>
     <lastmod>2026-11-26T01:48:06.291Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -68,11 +73,6 @@
   <url>
     <loc>https://superstackos.com/team/ryan-baggott/</loc>
     <lastmod>2026-11-26T01:46:07.749Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/team/</loc>
-    <lastmod>2026-11-26T01:46:07.095Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
