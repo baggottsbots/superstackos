@@ -15,3 +15,5 @@ html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
     @media (max-width: 640px) {
       .shop-frame-wrap { min-height: 560px; }
     }
+
+.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
