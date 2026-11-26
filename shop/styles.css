@@ -16,4 +16,4 @@ html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
       .shop-frame-wrap { min-height: 560px; }
     }
 
-.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
+#mobile-menu{max-height:calc(100vh - 4rem);max-height:calc(100dvh - 4rem);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
