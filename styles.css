@@ -105,4 +105,4 @@
     #mobile-menu.open{display:block}
     @media (min-width:1024px){#mobile-menu,#mobile-menu.open{display:none !important}}
 
-.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
+#mobile-menu{max-height:calc(100vh - 4rem);max-height:calc(100dvh - 4rem);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
