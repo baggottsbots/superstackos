@@ -1,0 +1,41 @@
+html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
+    body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .grid-bg { background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px); background-size: 28px 28px; }
+    .text-gradient { background: linear-gradient(92deg, #a78bfa 0%, #22d3ee 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(10px); transition: border-color .25s ease; }
+    .glass:hover { border-color: rgba(167,139,250,0.35); }
+    .orb { position: absolute; border-radius: 9999px; filter: blur(90px); opacity: 0.45; pointer-events: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details summary { list-style: none; }
+    details[open] > summary .faq-chevron { transform: rotate(180deg); }
+    .faq-chevron { transition: transform .3s ease; }
+    .prose-ss h2 { font-size: 1.65rem; font-weight: 800; color: #fff; margin: 2.8rem 0 .9rem; letter-spacing: -.01em; line-height: 1.2; scroll-margin-top: 5rem; }
+    .prose-ss h3 { font-size: 1.2rem; font-weight: 700; color: #fff; margin: 1.8rem 0 .6rem; }
+    .prose-ss p { color: #b4b9c5; line-height: 1.85; margin: 0 0 1.2rem; font-size: 1.05rem; }
+    .prose-ss ul, .prose-ss ol { color: #b4b9c5; margin: 0 0 1.4rem 1.3rem; line-height: 1.85; font-size: 1.05rem; }
+    .prose-ss ul { list-style: disc; } .prose-ss ol { list-style: decimal; }
+    .prose-ss li { margin: .4rem 0; padding-left: .25rem; }
+    .prose-ss strong { color: #fff; }
+    .prose-ss a { color: #a78bfa; text-decoration: underline; text-underline-offset: 3px; }
+    .prose-ss a:hover { color: #67e8f9; }
+    .verdict { border: 1px solid rgba(34,211,238,0.35); background: rgba(34,211,238,0.06); border-radius: 16px; padding: 1.25rem 1.4rem; }
+    .verdict p { margin: 0; color: #dbe1ea; font-size: 1.08rem; line-height: 1.75; }
+    .callout { border-left: 3px solid #8b5cf6; background: rgba(139,92,246,0.08); border-radius: 0 12px 12px 0; padding: 1rem 1.25rem; margin: 1.6rem 0; }
+    .callout p { margin: 0; font-size: 1rem; }
+    .cmp-wrap { overflow-x: auto; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; margin: 1.4rem 0 1.8rem; }
+    table.cmp { width: 100%; min-width: 620px; border-collapse: collapse; font-size: .95rem; }
+    table.cmp caption { text-align: left; padding: .9rem 1rem; color: #8b93a3; font-size: .82rem; }
+    table.cmp th, table.cmp td { text-align: left; vertical-align: top; padding: .85rem 1rem; border-top: 1px solid rgba(255,255,255,0.07); line-height: 1.55; }
+    table.cmp thead th { border-top: 0; background: rgba(255,255,255,0.04); color: #fff; font-weight: 700; }
+    table.cmp tbody th { color: #fff; font-weight: 600; width: 26%; }
+    table.cmp td { color: #b4b9c5; }
+    table.cmp td.us { color: #e6faff; background: rgba(34,211,238,0.05); }
+    .prompt-box { background: #0b0b14; border: 1px solid rgba(167,139,250,0.35); border-radius: 14px; padding: 1.1rem 1.25rem; margin: 1.2rem 0 1.6rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95rem; line-height: 1.7; color: #e9e5ff; }
+    .hero-fig { margin: 1.75rem 0 0; }
+    .hero-fig img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(124,58,237,0.25); }
+    .meme-fig { margin: 2rem 0 2.2rem; text-align: center; }
+    .meme-fig img { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(124,58,237,0.25); }
+    .meme-fig figcaption { margin-top: .75rem; font-size: .88rem; color: #8b93a3; line-height: 1.5; }
+    .dd { display: none; } .has-dd:hover .dd, .has-dd:focus-within .dd { display: block; }
+    #mobile-menu{display:none} #mobile-menu.open{display:block} @media (min-width:1024px){#mobile-menu,#mobile-menu.open{display:none !important}}
+    a.bg-white{color:#07070d !important;}
