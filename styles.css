@@ -104,3 +104,5 @@
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
     @media (min-width:1024px){#mobile-menu,#mobile-menu.open{display:none !important}}
+
+.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
