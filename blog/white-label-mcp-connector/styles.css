@@ -22,3 +22,5 @@ html, body { background: #07070d; color: #e5e7eb; overscroll-behavior: none; }
     .callout p { margin: 0; font-size: 1rem; }
     #mobile-menu{display:none} #mobile-menu.open{display:block} @media (min-width:1024px){#mobile-menu,#mobile-menu.open{display:none !important}}
     a.bg-white{color:#07070d !important;}
+
+.dd{display:none}.has-dd:hover .dd,.has-dd:focus-within .dd{display:block}#mobile-menu details summary{list-style:none}#mobile-menu details summary::-webkit-details-marker{display:none}
