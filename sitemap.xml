@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/compare/tally-alternative/</loc>
+    <lastmod>2026-11-26T17:58:03.066Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/compare/systeme-io-alternative/</loc>
     <lastmod>2026-11-26T17:57:55.481Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -278,11 +283,6 @@
   <url>
     <loc>https://superstackos.com/contact/</loc>
     <lastmod>2026-11-26T17:46:13.013Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/compare/tally-alternative/</loc>
-    <lastmod>2026-11-26T17:45:56.181Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
