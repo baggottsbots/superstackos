@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/shop/</loc>
+    <lastmod>2026-11-26T17:59:53.680Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/contact/</loc>
     <lastmod>2026-11-26T17:59:45.481Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -268,11 +273,6 @@
   <url>
     <loc>https://superstackos.com/</loc>
     <lastmod>2026-11-26T17:49:42.304Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/shop/</loc>
-    <lastmod>2026-11-26T17:46:19.035Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
