@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/shop/</loc>
+    <lastmod>2026-11-26T01:49:21.126Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/team/jetsury-padilla/</loc>
     <lastmod>2026-11-26T01:49:12.689Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -68,11 +73,6 @@
   <url>
     <loc>https://superstackos.com/compare/zapier-alternative/</loc>
     <lastmod>2026-11-26T01:46:11.102Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/shop/</loc>
-    <lastmod>2026-11-26T01:46:10.477Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
