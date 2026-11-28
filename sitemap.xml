@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://superstackos.com/compare/lindy-alternative/</loc>
+    <lastmod>2026-11-28T15:36:46.188Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://superstackos.com/compare/make-alternative/</loc>
     <lastmod>2026-11-28T15:36:36.053Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,11 +18,6 @@
   <url>
     <loc>https://superstackos.com/compare/n8n-alternative/</loc>
     <lastmod>2026-11-28T15:36:09.565Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://superstackos.com/compare/lindy-alternative/</loc>
-    <lastmod>2026-11-28T15:36:01.170Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
